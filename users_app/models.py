@@ -4,7 +4,7 @@ from django_jalali.db import models as jmodels
 
 
 class Profile(AbstractUser):
-    name = models.CharField(max_length=32)
+    first_name = models.CharField(max_length=32)
     last_name = models.CharField(max_length=32)
     phone_number = models.CharField(max_length=15)
     email = models.EmailField(unique=True)
