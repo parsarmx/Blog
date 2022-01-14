@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2483a81e-b667-4f79-b1bb-1b9627718e44" name="Changes" comment="user app created and models added using AbstractUser &#10;and a test view for login created" />
+    <list default="true" id="2483a81e-b667-4f79-b1bb-1b9627718e44" name="Changes" comment="urls file in user_app updated">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/users_app/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/users_app/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/users_app/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/users_app/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/users_app/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/users_app/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/users_app/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/users_app/views.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -75,7 +82,7 @@
       <option name="presentableId" value="Default" />
       <updated>1641972193302</updated>
       <workItem from="1641972220300" duration="4576000" />
-      <workItem from="1642017986681" duration="13468000" />
+      <workItem from="1642017986681" duration="18425000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1641975957391</created>
@@ -105,7 +112,14 @@
       <option name="project" value="LOCAL" />
       <updated>1642105113962</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="urls file in user_app updated">
+      <created>1642105370388</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1642105370388</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -126,6 +140,7 @@
     <MESSAGE value="first commit" />
     <MESSAGE value="users section fixed using djoser and auth urls added" />
     <MESSAGE value="user app created and models added using AbstractUser &#10;and a test view for login created" />
-    <option name="LAST_COMMIT_MESSAGE" value="user app created and models added using AbstractUser &#10;and a test view for login created" />
+    <MESSAGE value="urls file in user_app updated" />
+    <option name="LAST_COMMIT_MESSAGE" value="urls file in user_app updated" />
   </component>
 </project>
