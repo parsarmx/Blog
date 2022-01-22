@@ -24,7 +24,7 @@ SECRET_KEY = 'django-insecure-a7(*#*1i60cc8(e2rh=8_dfh(s5npkoxg!ibj@8iruj#(ox(pb
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 # Application definition
 
@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'corsheaders',
     'djoser',
     'django_jalali',
+    'drf_yasg',
     # ------------apps---------------------
     'users_app',
 
@@ -50,6 +51,12 @@ REST_FRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSES': (
         'rest_framework.authentication.TokenAuthentication',
     ),
+
+    'DEFAULT_PERMISSION_CLASSES': (
+        'rest_framework.permissions.IsAuthenticated',
+    ),
+    'DEFAULT_SCHEMA_CLASS': 'rest_framework.schemas.coreapi.AutoSchema'
+
 }
 
 CORS_ALLOWED_ORIGINS = [
@@ -107,7 +114,6 @@ EMAIL_HOST_USER = 'testappdjoser1@gmail.com'
 EMAIL_HOST_PASSWORD = 'ymictejsvcrwywrq'
 EMAIL_USE_TLS = True
 
-
 DJOSER = {
     'USER_CREATE_PASSWORD_RETYPE': True,
     'SEND_CONFIRMATION_EMAIL': True,
@@ -155,5 +161,3 @@ STATIC_URL = 'static/'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 AUTH_USER_MODEL = 'users_app.Profile'
-
-

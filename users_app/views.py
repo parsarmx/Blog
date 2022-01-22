@@ -1,4 +1,5 @@
 from django.shortcuts import render
+import requests
 
 from rest_framework.response import Response
 from rest_framework.views import APIView
@@ -15,7 +16,6 @@ class ProfileAPIView(APIView):
     permission_classes = (IsAuthenticatedOrReadOnly,)
 
     def get(self, request):
-
         try:
             user = Profile.objects.get(username=request.user.username)
             serializers = ProfileSerializers(user)
