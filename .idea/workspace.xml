@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2483a81e-b667-4f79-b1bb-1b9627718e44" name="Changes" comment="STATIC_ROOT added" />
+    <list default="true" id="2483a81e-b667-4f79-b1bb-1b9627718e44" name="Changes" comment="default statics taken">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/config/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/config/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/users_app/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/users_app/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/users_app/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/users_app/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/users_app/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/users_app/views.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -45,10 +53,11 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_MARK_IGNORED_FILES_AS_EXCLUDED" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../aida/aida.py" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/Behtarino" />
   </component>
   <component name="RunManager" selected="Python.test1">
     <configuration name="aida" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
@@ -141,7 +150,10 @@
       <workItem from="1642579855557" duration="779000" />
       <workItem from="1642599702443" duration="1188000" />
       <workItem from="1642850588151" duration="9336000" />
-      <workItem from="1642944554670" duration="688000" />
+      <workItem from="1642944554670" duration="1507000" />
+      <workItem from="1643007585050" duration="1247000" />
+      <workItem from="1643008856156" duration="10171000" />
+      <workItem from="1643124945686" duration="1083000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1641975957391</created>
@@ -234,7 +246,21 @@
       <option name="project" value="LOCAL" />
       <updated>1642945068697</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="default statics taken">
+      <created>1642945352605</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1642945352605</updated>
+    </task>
+    <task id="LOCAL-00015" summary="default statics taken">
+      <created>1642945393398</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1642945393398</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -263,7 +289,8 @@
     <MESSAGE value="Default parser" />
     <MESSAGE value="update urls for using uwsgi" />
     <MESSAGE value="STATIC_ROOT added" />
-    <option name="LAST_COMMIT_MESSAGE" value="STATIC_ROOT added" />
+    <MESSAGE value="default statics taken" />
+    <option name="LAST_COMMIT_MESSAGE" value="default statics taken" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/config$aida.coverage" NAME="aida Coverage Results" MODIFIED="1642406319158" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../../aida" />

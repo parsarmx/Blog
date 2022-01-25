@@ -11,3 +11,5 @@ class Profile(AbstractUser):
     birth_day = jmodels.jDateField(null=True, blank=True)
     terms_and_conditions = models.BooleanField(default=False)
     password = models.CharField(max_length=256)
+
+

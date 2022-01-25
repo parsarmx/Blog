@@ -53,14 +53,18 @@ REST_FRAMEWORK = {
         'rest_framework.authentication.TokenAuthentication',
     ),
 
-    'DEFAULT_PERMISSION_CLASSES': (
-        'rest_framework.permissions.IsAuthenticated',
-    ),
+    # 'DEFAULT_PERMISSION_CLASSES': (
+    #     'rest_framework.permissions.IsAuthenticated',
+    # ),
     'DEFAULT_SCHEMA_CLASS': 'rest_framework.schemas.coreapi.AutoSchema',
 
     '   DEFAULT_PARSER_CLASSES': [
         'rest_framework.parsers.JSONParser',
     ]
+
+}
+
+SWAGGER_SETTINGS = {
 
 }
 
@@ -122,8 +126,8 @@ EMAIL_USE_TLS = True
 DJOSER = {
     'USER_CREATE_PASSWORD_RETYPE': True,
     'SEND_CONFIRMATION_EMAIL': True,
-    'ACTIVATION_URL': 'auth/activation/{uid}/{token}/',
-    'SEND_ACTIVATION_EMAIL': False,
+    'ACTIVATION_URL': 'auth/users/activate/{uid}/{token}/',
+    'SEND_ACTIVATION_EMAIL': True,
 }
 
 # Password validation

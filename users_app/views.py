@@ -22,3 +22,16 @@ class ProfileAPIView(APIView):
             return Response(serializers.data)
         except ObjectDoesNotExist:
             return Response(data={"Object Does Not exist": "Line 24 in user_app/views"})
+
+
+class ActivateUser(APIView):
+    def get(self, request, uid, token, format=None):
+        payload = {'uid': uid, 'token': token}
+
+        url = "http://localhost:8000/auth/users/activation/"
+        response = requests.post(url, data=payload)
+
+        if response.status_code == 204:
+            return Response({}, response.status_code)
+        else:
+            return Response(response.json())
