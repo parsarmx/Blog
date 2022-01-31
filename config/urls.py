@@ -31,7 +31,7 @@ urlpatterns = [
 
                   # /*-------------apps----------------*/
                   path('', include('users_app.urls')),
-                  path('', include('blog_app.urls')),
+                  path('post/', include('blog_app.urls')),
 
                   # /*-----------swagger---------------*/
                   path('swagger/', schema_view.with_ui('swagger', cache_timeout=0), name='schema-swagger-ui'),
