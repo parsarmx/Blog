@@ -43,7 +43,9 @@ INSTALLED_APPS = [
     'djoser',
     'django_jalali',
     'drf_yasg',
+    'tinymce',
     # ------------apps---------------------
+    'blog_app',
     'users_app',
 
 ]
