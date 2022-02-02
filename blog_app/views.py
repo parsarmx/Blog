@@ -12,7 +12,7 @@ from django.core.exceptions import ObjectDoesNotExist
 from rest_framework.permissions import IsAuthenticated, IsAuthenticatedOrReadOnly
 
 
-class PostAPIView(APIView):
+class MainAPIView(APIView):
 
     def get(self, request):
         posts = Post.objects.all()

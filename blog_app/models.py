@@ -4,7 +4,17 @@ from tinymce import models as tinymce_models
 from django_jalali.db import models as jmodels
 
 
+class Category(models.Model):
+    name = models.CharField(max_length=256)
+
+
+class SubCategory(models.Model):
+    name = models.CharField(max_length=256)
+    category = models.ForeignKey(Category, on_delete=models.CASCADE)
+
+
 class Post(models.Model):
+    category = models.ForeignKey(SubCategory, on_delete=models.CASCADE)
     author = models.ForeignKey(Profile, on_delete=models.CASCADE)
     title = models.CharField(max_length=256)
     description = tinymce_models.HTMLField()
