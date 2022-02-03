@@ -25,6 +25,9 @@ class MainAPIView(APIView):
 class AddPostAPIView(APIView):
     permission_classes = (IsAuthenticated,)
 
+    def get(self, request):
+        pass
+
     def post(self, request):
         user = Profile.objects.get(username=request.user.username)
         Post.objects.create(
@@ -34,4 +37,14 @@ class AddPostAPIView(APIView):
             photos=request.data['photos']
         ).save()
 
-        return HttpResponse('success')
+        return Response(data={'message': 'Post Created'})
+
+    def put(self, request):
+        pass
+
+
+class ViewPostAPIView(APIView):
+
+    def get(self, request, category, post_id):
+        post = Post.objects.get(category__name=category, id=post_id)
+        return HttpResponse(post)

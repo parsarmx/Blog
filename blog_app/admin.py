@@ -14,7 +14,7 @@ class PostAdmin(admin.ModelAdmin):
 
 @admin.register(Post)
 class PostAdmin(admin.ModelAdmin):
-    list_display = ['author', 'title', 'photos', 'description', 'date_and_time', 'num_likes']
+    list_display = ['author', 'title', 'photos', 'description', 'date_and_time', 'num_likes', 'url_handler']
 
 
 @admin.register(Comment)

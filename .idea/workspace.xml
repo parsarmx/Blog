@@ -1,12 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2483a81e-b667-4f79-b1bb-1b9627718e44" name="Changes" comment="blog serializer created and updated">
+    <list default="true" id="2483a81e-b667-4f79-b1bb-1b9627718e44" name="Changes" comment="Category model and Comment serilizer created and fixed">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog_app/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/blog_app/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog_app/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/blog_app/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog_app/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/blog_app/serializers.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/blog_app/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/blog_app/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/blog_app/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/blog_app/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/config/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/users_app/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/users_app/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/users_app/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/users_app/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/users_app/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/users_app/serializers.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -175,7 +180,7 @@
       <workItem from="1643007585050" duration="1247000" />
       <workItem from="1643008856156" duration="10171000" />
       <workItem from="1643124945686" duration="6848000" />
-      <workItem from="1643624363243" duration="11844000" />
+      <workItem from="1643624363243" duration="32140000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1641975957391</created>
@@ -303,7 +308,28 @@
       <option name="project" value="LOCAL" />
       <updated>1643631565402</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="create post fixed in some ways now add posts are working">
+      <created>1643662706854</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1643662706854</updated>
+    </task>
+    <task id="LOCAL-00020" summary="serializer updated to show likes &#10;and model updated for number of likes">
+      <created>1643733071169</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1643733071169</updated>
+    </task>
+    <task id="LOCAL-00021" summary="Category model and Comment serilizer created and fixed">
+      <created>1643792226965</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1643792226965</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -336,7 +362,10 @@
     <MESSAGE value="user activation using email activated!" />
     <MESSAGE value="blog app created and django-tinymce module added for using tet editor in database" />
     <MESSAGE value="blog serializer created and updated" />
-    <option name="LAST_COMMIT_MESSAGE" value="blog serializer created and updated" />
+    <MESSAGE value="create post fixed in some ways now add posts are working" />
+    <MESSAGE value="serializer updated to show likes &#10;and model updated for number of likes" />
+    <MESSAGE value="Category model and Comment serilizer created and fixed" />
+    <option name="LAST_COMMIT_MESSAGE" value="Category model and Comment serilizer created and fixed" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/config$aida.coverage" NAME="aida Coverage Results" MODIFIED="1642406319158" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../../aida" />

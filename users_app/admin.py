@@ -9,7 +9,7 @@ class ProfileAdmin(admin.ModelAdmin):
                     'phone_number']
     fieldsets = (
         ('General Info', {
-            'fields': ('username', 'email', 'phone_number')
+            'fields': ('username', 'email', 'phone_number', 'instagram', 'twitter', 'telegram', 'website')
         }),
 
         ('Details', {

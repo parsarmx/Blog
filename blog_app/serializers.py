@@ -32,7 +32,7 @@ class PostSerializers(serializers.ModelSerializer):
     class Meta:
         model = Post
         fields = (
-            'author_id',
+            'author',
             'title',
             'description',
             'photos',

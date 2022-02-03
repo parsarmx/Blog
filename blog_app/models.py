@@ -7,10 +7,16 @@ from django_jalali.db import models as jmodels
 class Category(models.Model):
     name = models.CharField(max_length=256)
 
+    def __str__(self):
+        return self.name
+
 
 class SubCategory(models.Model):
     name = models.CharField(max_length=256)
     category = models.ForeignKey(Category, on_delete=models.CASCADE)
+
+    def __str__(self):
+        return self.name
 
 
 class Post(models.Model):
@@ -24,6 +30,9 @@ class Post(models.Model):
 
     def num_likes(self):
         return self.like_set.all().count()
+
+    def url_handler(self):
+        return f'post/{self.category}/{self.pk}'
 
 
 class Comment(models.Model):
