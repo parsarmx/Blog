@@ -13,8 +13,4 @@ class ProfileSerializers(serializers.ModelSerializer):
             'phone_number',
             'email',
             'birth_day',
-            'instagram',
-            'twitter',
-            'telegram',
-            'website'
         )
