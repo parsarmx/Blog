@@ -67,7 +67,16 @@ REST_FRAMEWORK = {
 }
 
 SWAGGER_SETTINGS = {
-
+    'SECURITY_DEFINITIONS': {
+        'basic': {
+            'type': 'basic'
+        }
+    },
+    'Bearer': {
+        'type': 'apiKey',
+        'name': 'Authorization',
+        'in': 'header'
+    }
 }
 
 CORS_ALLOWED_ORIGINS = [

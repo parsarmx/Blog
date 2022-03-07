@@ -38,5 +38,6 @@ class PostSerializers(serializers.ModelSerializer):
             'photos',
             'date_and_time',
             'num_likes',
+            'get_absolute_url',
             # 'likes'
         )

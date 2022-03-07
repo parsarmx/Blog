@@ -31,8 +31,8 @@ class Post(models.Model):
     def num_likes(self):
         return self.like_set.all().count()
 
-    def url_handler(self):
-        return f'post/{self.category}/{self.pk}'
+    def get_absolute_url(self):
+        return f'/post/{self.category}/{self.pk}'
 
 
 class Comment(models.Model):
